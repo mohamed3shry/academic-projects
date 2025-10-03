@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=todo_user
+      - MYSQL_PASSWORD=todo_password
+      - MYSQL_DATABASE=todo_db
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    networks:
+      - app-network
+  mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=todo_db
+      - MYSQL_USER=todo_user
+      - MYSQL_PASSWORD=todo_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+      start_period: 30s
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  mysql-data:
