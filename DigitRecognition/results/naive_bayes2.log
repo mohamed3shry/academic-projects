@@ -1,0 +1,17 @@
+2025-12-11 13:24:21,833 - INFO - Starting Multinomial Naive Bayes training...
+2025-12-11 13:24:22,914 - INFO - Fold 1: Accuracy=0.6694, Precision=0.6739, Recall=0.6696, F1=0.6689
+2025-12-11 13:24:22,957 - INFO - Fold 2: Accuracy=0.6594, Precision=0.6678, Recall=0.6577, F1=0.6593
+2025-12-11 13:24:23,000 - INFO - Fold 3: Accuracy=0.6350, Precision=0.6403, Recall=0.6393, F1=0.6372
+2025-12-11 13:24:23,039 - INFO - Fold 4: Accuracy=0.6506, Precision=0.6556, Recall=0.6507, F1=0.6519
+2025-12-11 13:24:23,078 - INFO - Fold 5: Accuracy=0.6631, Precision=0.6686, Recall=0.6626, F1=0.6634
+2025-12-11 13:24:23,078 - INFO - CV Training completed in 0.20s (0.00 minutes)
+2025-12-11 13:24:23,079 - INFO - CV Mean Accuracy: 0.6555 ± 0.0119
+2025-12-11 13:24:23,079 - INFO - CV Mean Precision: 0.6612 ± 0.0121
+2025-12-11 13:24:23,079 - INFO - CV Mean Recall: 0.6560 ± 0.0104
+2025-12-11 13:24:23,079 - INFO - CV Mean F1-score: 0.6561 ± 0.0110
+2025-12-11 13:24:23,108 - INFO - Final model saved to results/naive_bayes2.pkl
+2025-12-11 13:24:23,123 - INFO - ===== Test Set Results =====
+2025-12-11 13:24:23,123 - INFO - Test Accuracy: 0.6230
+2025-12-11 13:24:23,124 - INFO - Precision: 0.6290
+2025-12-11 13:24:23,124 - INFO - Recall: 0.6230
+2025-12-11 13:24:23,125 - INFO - F1-score: 0.6235

@@ -1,0 +1,17 @@
+2025-12-08 19:37:59,389 - INFO - Starting Gaussian Naive Bayes with 5-Fold CV and final training on full data...
+2025-12-08 19:37:59,742 - INFO - Fold 1: Accuracy=0.5250, Precision=0.5481, Recall=0.5245, F1=0.5276
+2025-12-08 19:37:59,812 - INFO - Fold 2: Accuracy=0.5000, Precision=0.5342, Recall=0.4957, F1=0.5010
+2025-12-08 19:37:59,876 - INFO - Fold 3: Accuracy=0.4975, Precision=0.5470, Recall=0.5033, F1=0.5020
+2025-12-08 19:37:59,942 - INFO - Fold 4: Accuracy=0.5225, Precision=0.5693, Recall=0.5217, F1=0.5314
+2025-12-08 19:38:00,006 - INFO - Fold 5: Accuracy=0.5012, Precision=0.5339, Recall=0.5039, F1=0.5015
+2025-12-08 19:38:00,006 - INFO - CV Training completed in 0.33s (0.01 minutes)
+2025-12-08 19:38:00,006 - INFO - CV Mean Accuracy: 0.5092 ± 0.0119
+2025-12-08 19:38:00,006 - INFO - CV Mean Precision: 0.5465 ± 0.0129
+2025-12-08 19:38:00,006 - INFO - CV Mean Recall: 0.5098 ± 0.0112
+2025-12-08 19:38:00,006 - INFO - CV Mean F1-score: 0.5127 ± 0.0138
+2025-12-08 19:38:00,029 - INFO - Final model trained on full dataset saved to results/naive_bayes.pkl
+2025-12-08 19:38:00,090 - INFO - ===== Test Set Results =====
+2025-12-08 19:38:00,090 - INFO - Test Accuracy: 0.4915
+2025-12-08 19:38:00,090 - INFO - Precision: 0.5274
+2025-12-08 19:38:00,090 - INFO - Recall: 0.4915
+2025-12-08 19:38:00,090 - INFO - F1-score: 0.4936
