@@ -1,0 +1,20 @@
+2026-05-09 20:04:00 | [START] algo=heat | total_procs=4 | groups=1
+2026-05-09 20:04:00 | algo=heat | comm=blocking | procs=4 | grid=10x10 | iters=30 | time=0.000583157s | elements=100 | ops=14500 | ops/sec=2.48647e+07
+2026-05-09 20:04:01 | [START] algo=heat | total_procs=4 | groups=1
+2026-05-09 20:04:02 | algo=heat | comm=nonblocking | procs=4 | grid=800x800 | iters=200 | time=0.877505s | elements=640000 | ops=636800000 | ops/sec=7.25694e+08
+2026-05-09 20:04:04 | [START] algo=heat | total_procs=4 | groups=1
+2026-05-09 20:04:40 | [START] algo=matmul | total_procs=4 | groups=1
+2026-05-09 20:04:47 | algo=matmul | comm=blocking | procs=4 | A_shape=2000x2000 | B_shape=2000x2000 | time=3.44259s | flops=16000000000 | gflops=4.64766
+2026-05-09 20:04:49 | [START] algo=matmul | total_procs=4 | groups=1
+2026-05-09 20:04:55 | algo=matmul | comm=nonblocking | procs=4 | A_shape=2000x2000 | B_shape=2000x2000 | time=2.86288s | flops=16000000000 | gflops=5.58877
+2026-05-09 20:04:57 | [START] algo=matmul | total_procs=4 | groups=1
+2026-05-09 20:05:20 | [GROUP] rank=3 -> local_rank=0 | algo=matmul | group_size=3
+2026-05-09 20:05:20 | [START] algo=both | total_procs=6 | groups=2
+2026-05-09 20:05:20 | [GROUP] rank=0 -> local_rank=0 | algo=heat | group_size=3
+2026-05-09 20:05:21 | algo=heat | comm=blocking | procs=6 | grid=800x800 | iters=200 | time=0.933729s | elements=640000 | ops=636800000 | ops/sec=6.81996e+08
+2026-05-09 20:05:27 | algo=matmul | comm=blocking | procs=6 | A_shape=2000x2000 | B_shape=2000x2000 | time=3.3764s | flops=16000000000 | gflops=4.73878
+2026-05-09 20:05:28 | [START] algo=both | total_procs=6 | groups=2
+2026-05-09 20:05:28 | [GROUP] rank=3 -> local_rank=0 | algo=matmul | group_size=3
+2026-05-09 20:05:28 | [GROUP] rank=0 -> local_rank=0 | algo=heat | group_size=3
+2026-05-09 20:05:29 | algo=heat | comm=nonblocking | procs=6 | grid=800x800 | iters=200 | time=0.821055s | elements=640000 | ops=636800000 | ops/sec=7.75587e+08
+2026-05-09 20:05:36 | algo=matmul | comm=nonblocking | procs=6 | A_shape=2000x2000 | B_shape=2000x2000 | time=3.46418s | flops=16000000000 | gflops=4.6187
