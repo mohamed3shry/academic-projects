@@ -1,0 +1,26 @@
+Program
+  Var age = 
+    Integer: 18
+  Var status = 
+  If
+    Comparison: >=
+      Identifier: age
+      Integer: 18
+Program
+      Assign status = 
+        String: "Adult"
+  Else
+Program
+      Assign status = 
+        String: "Minor"
+  If
+    Comparison: ==
+      Identifier: status
+      String: "Adult"
+Program
+      Var allowed = 
+        Integer: 1
+  Else
+Program
+      Var allowed = 
+        Integer: 0
